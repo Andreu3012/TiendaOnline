@@ -86,8 +86,11 @@ require_once "config/config.php";
                             <h4>Introduzca sus datos para finalizar compra</h4>
                             <input type="text" size="15" maxlength="30" placeholder="Nombre" name="nombre" id="nombre">
                             <input type="email" size="15" maxlength="30" placeholder="Correo" name="correo" id="correo">
-                            <input type="text" size="15" maxlength="30" placeholder="Direccion" name="direccion"
-                                id="direccion">
+                           <select name="direccion" id="direccion">
+                                <option value="Canalejas">Canalejas</option>
+                                <option value="Jilotepec">Jilotepec</option>
+                                 <option value="Buenavista">Buenavista</option>
+                            </select>
                             <input type="text" size="15" maxlength="30" placeholder="Tarjeta" name="tarjeta"
                                 id="tarjeta">
                             <button onclick="enviarCorreo()" style="display: none;" class="btn btn-warning"
